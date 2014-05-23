@@ -25,8 +25,6 @@ module BingAdsApi
         filter_to_hash(FILTERS, keys)
       hash[get_attribute_key('scope', keys)] = scope_to_hash(keys)
       hash["@xsi:type"] = type_attribute_for_soap
-      puts "Andys gem:"
-      binding.pry
       return hash
     end
 
