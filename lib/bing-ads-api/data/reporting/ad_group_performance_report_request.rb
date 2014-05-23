@@ -11,14 +11,13 @@ module BingAdsApi
       reporting_constants['account_performance_report']['filter']
 
     def initialize(attributes={})
-      raise "Invalid columns" if !valid_columns(COLUMNS, attributes[:columns])
-      raise "Invalid filters" if !valid_filter(FILTERS, attributes[:filter])
-      raise "Invalid scope" if !valid_scope(attributes[:scope])
       super(attributes)
     end
 
     def to_hash(keys = :underscore)
       hash = super(keys)
+
+      binding.pry
       hash[get_attribute_key('columns', keys)] =
         columns_to_hash(COLUMNS, columns, keys)
       hash[get_attribute_key('filter', keys)] =
@@ -29,11 +28,6 @@ module BingAdsApi
     end
 
     private
-
-    def valid_scope(scope)
-      raise Exception.new("Invalid scope: no account_ids key") if !scope.key?(:account_ids)
-      return true
-    end
 
     def scope_to_hash(keys_case=:underscore)
       return { get_attribute_key('account_ids', keys_case) =>
