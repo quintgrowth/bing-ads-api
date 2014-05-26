@@ -295,6 +295,59 @@ constants:
         ad_distribution: "AdDistribution"
         device_os: "DeviceOS"
         device_type: "DeviceType"
+    ad_performance_report:
+      type: 'AdPerformanceReportRequest'
+      columns:
+       account_id: 'AccountId'
+       account_number: 'AccountNumber'
+       ad_description: 'AdDescription'
+       ad_distribution: 'AdDistribution'
+       ad_group_id: 'AdGroupId'
+       ad_group_name: 'AdGroupName'
+       ad_id: 'AdId'
+       ad_status: 'AdStatus'
+       ad_title: 'AdTitle'
+       ad_type: 'AdType'
+       assists: 'Assists'
+       average_cpc: 'AverageCpc'
+       average_cpm: 'AverageCpm'
+       average_position: 'AveragePosition'
+       bid_match_type: 'BidMatchType'
+       business_category_id: 'BusinessCategoryId'
+       business_category_name: 'BusinessCategoryName
+       business_listing_id: 'BusinessListingId'
+       business_listing_name: 'BusinessListingName'
+       campaign_id: 'CampaignId'
+       campaign_name: 'CampaignName'
+       clicks: 'Clicks'
+       conversion_rate: 'ConversionRate'
+       conversions: 'Conversions'
+       cost_per_assist: 'CostPerAssist'
+       cost_per_conversion: 'CostPerConversion'
+       ctr: 'Ctr'
+       currency_code: 'CurrencyCode'
+       delivered_match_type: 'DeliveredMatchType'
+       destination_url: 'DestinationUrl'
+       device_os: 'DeviceOS'
+       device_type: 'DeviceType'
+       display_url: 'DisplayUrl'
+       extended_cost: 'ExtendedCost'
+       impressions: 'Impressions'
+       language: 'Language'
+       network: 'Network'
+       pricing_model: 'PricingModel'
+       return_on_ad_spend: 'ReturnOnAdSpend'
+       revenue: 'Revenue'
+       revenue_per_assist: 'RevenuePerAssist'
+       revenue_per_conversion: 'RevenuePerConversion
+       spend: 'Spend'
+       top_vs_other: 'TopVsOther'
+      filter:
+        ad_distribution: 'AdDistribution'
+        ad_type: 'AdType'
+        device_type: 'DeviceType'
+        language_code: 'LanguageCode'
+
     ad_group_performance_report:
       type: "AdGroupPerformanceReportRequest"
       columns:
@@ -424,3 +477,5 @@ constants:
         device_os: "DeviceOS"
         device_type: "DeviceType"
         status: "Status"
+
+
