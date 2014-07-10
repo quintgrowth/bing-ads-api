@@ -367,6 +367,11 @@ constants:
         time_period: "TimePeriod"
         spend: "Spend"
         average_position: "AveragePosition"
+      filter:
+        ad_distribution: "AdDistribution"
+        ad_type: "AdType"
+        device_type: "DeviceType"
+        language_code: "LanguageCode"
 
     ad_group_performance_report:
       type: "AdGroupPerformanceReportRequest"
