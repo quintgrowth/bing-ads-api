@@ -349,6 +349,25 @@ constants:
         device_type: "DeviceType"
         language_code: "LanguageCode"
 
+    keyword_performance_report:
+      type: "KeywordPerformanceReportRequest"
+      columns:
+        account_name: "AccountName"
+        account_number: "AccountNumber"
+        account_id: "AccountId"
+        ad_group_id: "AdGroupId"
+        ad_group_name: "AdGroupName"
+        campaign_name: "CampaignName"
+        campaign_id: "CampaignId"
+        keyword: "Keyword"
+        keyword_id: "KeywordId"
+        destination_url: "DestinationUrl"
+        clicks: "Clicks"
+        impressions: "Impressions"
+        time_period: "TimePeriod"
+        spend: "Spend"
+        average_position: "AveragePosition"
+
     ad_group_performance_report:
       type: "AdGroupPerformanceReportRequest"
       columns:
@@ -478,3 +497,4 @@ constants:
         device_os: "DeviceOS"
         device_type: "DeviceType"
         status: "Status"
+
