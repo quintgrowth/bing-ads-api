@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bing-ads-api (0.1.0)
+    bing-ads-api (0.3)
       rails
       savon (~> 2.3.0)
 
@@ -35,9 +35,9 @@ GEM
     activesupport (3.2.16)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    akami (1.2.0)
+    akami (1.2.2)
       gyoku (>= 0.4.0)
-      nokogiri (>= 1.4.0)
+      nokogiri
     arel (3.0.3)
     builder (3.0.4)
     erubis (2.7.0)
@@ -57,12 +57,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    mini_portile (0.5.2)
+    mini_portile (0.6.0)
     multi_json (1.8.2)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
     nori (2.3.0)
-    polyglot (0.3.3)
+    polyglot (0.3.4)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -108,7 +108,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.38)
+    tzinfo (0.3.39)
     wasabi (3.2.3)
       httpi (~> 2.0)
       mime-types (< 2.0.0)
