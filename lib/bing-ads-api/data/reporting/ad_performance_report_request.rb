@@ -38,6 +38,7 @@ module BingAdsApi
     end
 
     def scope_to_hash(keys_case=:underscore)
+      return {} unless scope.present?
       scope_hash = {}
       account_ids_scope = object_to_hash(scope[:account_ids], keys_case)
       scope_hash[get_attribute_key('account_ids', keys_case)] = {'ins0:long' => account_ids_scope} if account_ids_scope.present?
