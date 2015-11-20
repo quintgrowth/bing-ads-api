@@ -33,7 +33,7 @@ module BingAdsApi
     private
 
     def valid_scope(scope)
-      raise Exception.new('Invalid scope: no account_ids key') if !scope.key?(:account_ids)
+      #raise Exception.new('Invalid scope: no account_ids key') if !scope.key?(:account_ids)
       true
     end
 
