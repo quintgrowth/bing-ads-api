@@ -21,8 +21,8 @@ module BingAdsApi
       hash = super(keys)
       hash[get_attribute_key('columns', keys)] =
         columns_to_hash(COLUMNS, columns, keys)
-      hash[get_attribute_key('filter', keys)] =
-        filter_to_hash(FILTERS, keys)
+      filter_hash = filter_to_hash(FILTERS, filter, keys)
+      hash[get_attribute_key('filter', keys)] = filter_hash if filter_hash.present?
       hash[get_attribute_key('scope', keys)] = scope_to_hash(keys)
       hash['@xsi:type'] = type_attribute_for_soap
 

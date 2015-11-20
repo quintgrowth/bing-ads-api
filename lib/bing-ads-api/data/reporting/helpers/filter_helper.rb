@@ -68,13 +68,15 @@ module BingAdsApi::Helpers
 		# filter - Hash with the filter values
 		# 
 		# Returns:: Hash
-		def filter_to_hash(valid_filters, keys_case=:undescore)
-			hashed_filter = {}
-			filter.each do |key, value|
-				hashed_filter[get_attribute_key(key, keys_case)] = solve_filter_value(key, value)
-			end
-			return hashed_filter
-		end
+    def filter_to_hash(valid_filters, filter, keys_case=:undescore)
+      hashed_filter = {}
+      if filter
+        filter.each do |key, value|
+          hashed_filter[get_attribute_key(key, keys_case)] = solve_filter_value(key, value)
+        end
+      end
+      return hashed_filter
+    end
 
 
 		# Internal:: Solves the Bing value for the given filter attribute 
