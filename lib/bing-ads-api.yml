@@ -251,6 +251,7 @@ constants:
       type: "AccountPerformanceReportRequest"
       # "columns" names for <Columns> tag
       columns:
+        account_id: "AccountId"
         account_name: "AccountName"
         account_number: "AccountNumber"
         time_period: "TimePeriod"
