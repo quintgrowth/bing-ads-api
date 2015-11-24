@@ -346,6 +346,7 @@ constants:
         revenue_per_conversion: "RevenuePerConversion"
         spend: "Spend"
         top_vs_other: "TopVsOther"
+        tracking_template: "TrackingTemplate"
       filter:
         ad_distribution: "AdDistribution"
         ad_type: "AdType"
