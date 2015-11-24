@@ -334,6 +334,8 @@ constants:
         device_type: "DeviceType"
         display_url: "DisplayUrl"
         extended_cost: "ExtendedCost"
+        final_u_r_l: "FinalURL"
+        final_url: "FinalUrl"
         impressions: "Impressions"
         language: "Language"
         network: "Network"
