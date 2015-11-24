@@ -11,9 +11,9 @@ module BingAdsApi
       reporting_constants['ad_performance_report']['filter']
 
     def initialize(attributes={})
-      raise Exception.new('Invalid columns') if !valid_columns(COLUMNS, attributes[:columns])
-      raise Exception.new('Invalid filters') if !valid_filter(FILTERS, attributes[:filter])
-      raise Exception.new('Invalid scope') if !valid_scope(attributes[:scope])
+      #raise Exception.new('Invalid columns') if !valid_columns(COLUMNS, attributes[:columns])
+      #raise Exception.new('Invalid filters') if !valid_filter(FILTERS, attributes[:filter])
+      #raise Exception.new('Invalid scope') if !valid_scope(attributes[:scope])
       super(attributes)
     end
 
