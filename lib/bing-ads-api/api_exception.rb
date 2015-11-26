@@ -13,7 +13,7 @@ module BingAdsApi
 	#
 	#
 	#
-	class ApiException < Exception
+	class ApiException < StandardError
 		
 		attr_accessor :fault_object
 		
